@@ -20,3 +20,8 @@ docker run -d -it --name beacon_mbs_p2p_n7 -p 7883:1883 beacon/mbs_p2p:03.30.alp
 docker run -d -it --name beacon_mbs_p2p_n8 -p 8883:1883 beacon/mbs_p2p:03.30.alpine.3.8
 docker run -d -it --name beacon_mbs_p2p_n9 -p 9883:1883 beacon/mbs_p2p:03.30.alpine.3.8
 docker run -d -it --name beacon_mbs_p2p_n10 -p 10883:1883 beacon/mbs_p2p:03.30.alpine.3.8
+
+... ...
+
+User/Group
+Th image runs mbs_p2p under the beacon user and group, which are created with a uid and gid of 1883.
